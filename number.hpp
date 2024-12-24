@@ -510,7 +510,7 @@ std::ostream& operator<<(std::ostream& stream, const number<TDigit, NDigits, NDi
  * @returns A reference to the original input stream.
  */
 template <typename TDigit, unsigned NDigits, TDigit NDigitMax>
-std::istream& operator<<(std::istream& stream, number<TDigit, NDigits, NDigitMax>& out) {
+std::istream& operator>>(std::istream& stream, number<TDigit, NDigits, NDigitMax>& out) {
     using num = number<TDigit, NDigits, NDigitMax>;
 
     std::string number_string;
